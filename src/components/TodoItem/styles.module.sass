@@ -9,11 +9,14 @@
 .title
     margin: 0 0 40px
     font-family: sans-serif
-
+    text-decoration: line-through
+.titleCompleted
+    margin: 0 0 40px
+    font-family: sans-serif
 @mixin button()
     display: inline-block
     padding: 10px 20px
-    border-radius: 0
+    border-radius: 5px
     border: 0
     margin-right: 20px
     font-size: 1rem
@@ -29,4 +32,30 @@
     @include button()
     background-color: #a00
     color: #fff
+.updateBtn
+    @include button()
+    background-color: #1589FF
+    color: #fff
 
+.input
+    box-sizing: border-box
+    width: 60%
+    padding: 10px 15px
+    font-size: 2rem
+    margin: 10px 0;
+    border: 1px solid #888
+    border-radius: 5px
+    outline: 0
+.update
+    padding: 15px 30px
+    border-radius: 5px
+    background-color: #1589FF
+    color: #fff
+    border: 1px solid #add
+    font-size: 1rem
+    margin-left: 10px
+    margin-top: 9px
+    outline: 0
+    height: 60px
+.formdiv
+    display: flex
